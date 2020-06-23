@@ -8,6 +8,8 @@ body {
     width: 100%;
     text-align: center;
     margin: 0 auto;
+    height: 100%;
+    margin-bottom: 30px;
 }
 
 p {
@@ -80,6 +82,7 @@ nav{
 h2 {
     font-size: 45px;
     font-family: 'Sriracha', cursive;
+    margin-top: 60px;
 }
 
 .content-box {
@@ -118,3 +121,58 @@ h2 {
     margin-top: 5%;
 }
 
+h3 {
+    font-family: 'Sriracha', cursive;
+    font-size: 30px;
+    color: white;
+}
+
+.work {
+    /* display: flex;
+    justify-content: center; */
+    background-color: black;
+    height: 780px;
+}
+
+.work-text1 {
+    width: 70%;
+    height: 250px;
+    padding-top: 20px;
+    padding-left: 5%;
+}
+
+.textbox1 {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.work-text1 p {
+    color: white;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.airbnb {
+    width: 50%;
+    height: 100%;
+}
+
+.work-text2 {
+    width: 70%;
+    height: 250px;
+    padding-top: 100px;
+    padding-left: 27%;
+}
+
+.textbox2 {
+    display: flex;
+}
+
+.contentbox2 {
+    color: white;
+}
+
+.wordblog {
+    width: 50%;
+    height: 100%;
+}

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* @import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+
+body {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+p {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 20px;
+}
+
+nav{
+    border-bottom: 5px solid #ccc;
+    position: relative;
+    height: 50px;
+    }
+    nav ul{
+    position: absolute;
+    left:10%;
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    text-align: center;
+    }
+    nav ul li{
+    display: table-cell;
+    min-width: 50px;
+    font-family: 'Sriracha', cursive;
+    }
+    nav ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #aaa;
+    }
+    nav ul li.current{
+    font-weight: bold;
+    border-top: 5px solid #00B0F0;
+    }
+    nav ul li.current a{
+    color: #00B0F0;
+    }
+    nav ul li a:hover{
+    color: #0089BB;
+    background-color: #FBFBDD;
+    }
+    nav ul li:hover{
+    border-top: 5px solid #F8E750;
+}
+
+
+.imag img {
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    position: relative;
+}
+.imag-titll {
+    width: 350px;
+    height: 70px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 39%;
+    text-align: center;
+    font-size: 60px ;
+    font-family: 'Sriracha', cursive;
+}
+
+.content {
+    font-size: 45px;
+    font-family: 'Sriracha', cursive;
+}
+
+.content-box {
+    display: flex;
+    margin-top: 10px;
+}
+
+.main-imag{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    float: right;
+    /* border-radius: 100%; */
+    shape-outside: circle();
+}
+
+
+
+

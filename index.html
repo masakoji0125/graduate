@@ -6,18 +6,18 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="/js/app.js" defer></script>
+    <script src="https://www.webcreatorbox.com/sample/js/shapes-polyfill.min.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body>
     <header>
         <div class="imag">
             <nav>
-                <ul>
-                    <li class=”current”><a href=”#”>Home</a></li>
-                    <li><a href=”#”>News</a></li>
-                    <li><a href=”#”>About</a></li>
-                    <li><a href=”#”>Access</a></li>
-                    <li><a href=”#”>Blog</a></li>
+                <ul>  
+                    <li><a href="#content">HOME</a></li>
+                    <li><a href="#content">Profile</a></li>
+                    <li><a href="#main-a">I can do</a></li>
+                    <li><a href="#content">Profile</a></li>
                 </ul>
             </nav>
             <img src=".//img/ta-taki .jpg" alt="headerimg">
@@ -26,15 +26,37 @@
     </header>
 
     <main>
-        <h2 class="content">Profile</h2>
+        <h2 class="content"><a name="content"></a> Profile</h2>
         <div class="content-box">
-            <img class="main-imag" src="./img/IMG_2411.jpeg" alt="">
-            <!-- <img class="main-imag" src="/IMG_2412.jpeg" alt=""> -->
+            <img class="main-imag" src="./img/IMG_2411.png" alt="">
             <div class="content-text">
                 <p>1997年、沖縄県北部の大宜味村で生まれました。</p>
-                <p></p>
-
+                <p>沖縄県立名護商工高等学校を卒業し、県内のホテルに就職。</p>
+                <p>ホテル退職後、東京の携帯ショップ運営会社に転職。</p>
+                <p>色々あり退職。地元に戻り歯医者で歯科助手をしていました。</p>
+                <p>その後パソコンに興味を持ち2020年にNexSeed沖縄に入学。</p>
+                <p>プログラミングを初めてまだ3ヶ月なのでわからないことも沢山！</p>
+                <p>駆け出しエンジニアとしてこれから頑張っていきます。</p>
+                <p>コードも簡単なものなら作成可能です。</p>
             </div>
+        </div>
+
+        <h2 class="main-tag"><a name="main-a"></a> Things i can do</h2>
+        <div class="can">
+            <img class="can-imag" src="./img/html.jpg" alt="">
+            <div class="can-text">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>JQUERY</p>
+                <p>PHP</p>
+                <p>WordPress</p>
+            </div>
+
+            <div>
+                
+            </div>
+
         </div>
     </main>
     

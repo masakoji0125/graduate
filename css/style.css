@@ -77,7 +77,7 @@ nav{
     font-family: 'Sriracha', cursive;
 }
 
-.content {
+h2 {
     font-size: 45px;
     font-family: 'Sriracha', cursive;
 }
@@ -85,18 +85,36 @@ nav{
 .content-box {
     display: flex;
     margin-top: 10px;
+    margin-left: 10%;
 }
 
 .main-imag{
-    object-fit: cover;
-    border-radius: 50%;
     width: 300px;
     height: 300px;
     float: right;
-    /* border-radius: 100%; */
-    shape-outside: circle();
 }
 
+.content-text {
+    text-align: left;
+    line-height: 15px;
+}
 
+.can {
+    display: flex;
+    justify-content: center;
+}
 
+.can-imag {
+    width: 700px;
+    height: 400px;
+    position: absolute;
+}
+
+.can-text {
+    width: 200px;
+    height: 280px;
+    background-color: rgba(252, 252, 252, 0.548);
+    position: relative;
+    margin-top: 5%;
+}
 

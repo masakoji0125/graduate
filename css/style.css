@@ -337,15 +337,15 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
 
 #form {
   position: relative;
-  width: 500px;
-  margin: 0 auto ;
+  width: 400px;
+  margin-left: 15%;
   
 }
 
 input {
   font-family: 'Sriracha', cursive;
   font-size: 0.875em;
-  width: 470px;
+  width: 400px;
   height: 50px;
   padding: 0px 15px 0px 15px;
   
@@ -368,8 +368,8 @@ input:hover {
 }
 
 textarea {
-  width: 470px;
-  max-width: 470px;
+  width: 400px;
+  max-width: 440px;
   height: 110px;
   max-height: 110px;
   padding: 15px;
@@ -395,7 +395,7 @@ textarea:hover {
 }
 
 #submit {
-  width: 502px;
+  width: 433px;
   
   padding: 0;
   margin: -5px 0px 0px 0px;
@@ -459,7 +459,7 @@ footer {
 }
 
 
-@media screen and (max-width: 896px) {
+@media screen and (max-width: 1002px) {
 
     body {
         text-align: center;
@@ -490,7 +490,7 @@ footer {
         height: 35px;
         font-size: 30px;
         top: 145px;
-        left: 2.9em;
+        left: 30px;
     }
 
     #flipbook {
@@ -509,7 +509,16 @@ footer {
 
     .content-box1 {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+    }
+f
+    .content-text1{
+       margin-left: 20px;
+       text-align: left;
+    }
+
+    .main-work1 {
+        padding-top: 70px;
     }
 
     .main-imag1 {
@@ -523,9 +532,6 @@ footer {
         font-size: 13px;
     }
 
-    .content-text1 {
-        margin-left: 20%;
-    }
 
     .can1 {
         width: 100%;
@@ -535,8 +541,8 @@ footer {
         width: 300px;
         height: 200px;
         position: absolute;
-       display: flex;
-        margin-left: 40px;
+        display: flex;
+        left: 10%;
         /* z-index: 1; */
     }
     
@@ -556,7 +562,7 @@ footer {
     }
 
     .work1 {
-        height: 390px;
+        height: 410px;
         background-color: black;
     }
 

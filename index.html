@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="/js/app.js" defer></script>
-    <script src="https://www.webcreatorbox.com/sample/js/shapes-polyfill.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+    crossorigin="anonymous" defer></script> 
+    <script src="./turnjs4/lib/turn.js" defer></script>
+    <script src="./js/app.js" defer></script>
+    
     <title>Portfolio</title>
 </head>
 <body>
@@ -26,52 +30,63 @@
         </div>
     </header>
 
-    <main>
-        <h2 class="content"><a name="content"></a> Profile</h2>
-        <div class="content-box">
-            <img class="main-imag" src="./img/IMG_2411.png" alt="">
-            <div class="content-text">
-                <h4>具志堅　雅子</h4>
-                <p>1997年、沖縄県北部の大宜味村で生まれました。</p>
-                <p>沖縄県立名護商工高等学校を卒業し、県内のホテルに就職。</p>
-                <p>ホテル退職後、携帯ショップ→歯科助手</p>
-                <p>その後パソコンに興味を持ち2020年にNexSeed沖縄に入学。</p>
-                <p>駆け出しエンジニアとしてこれから頑張っていきます。</p>
-                <p>コードも簡単なものなら作成可能です。</p>
+    <div id="flipbook" style="width: 95%; margin-top: 15px; ">
+        <div class="book">
+            <h1>My Book</h1>
+            <img src="./img/bookimag.jpeg" class="bookimag" alt="">
+
+        </div>
+        <div class="page1" >
+            <h2 class="content"><a name="content"></a> Profile</h2>
+            <div class="content-box">
+                <img class="main-imag" src="./img/IMG_2411.png" alt="">
+                <div class="content-text">
+                    <h4>具志堅　雅子</h4>
+                    <p>1997年、沖縄県北部の大宜味村で生まれました。</p>
+                    <p>沖縄県立名護商工高等学校を卒業し、県内のホテルに就職。</p>
+                    <p>ホテル退職後、携帯ショップ→歯科助手</p>
+                    <p>その後パソコンに興味を持ち2020年にNexSeed沖縄に入学。</p>
+                    <p>駆け出しエンジニアとしてこれから頑張っていきます。</p>
+                    <p>コードも簡単なものなら作成可能です。</p>
+                </div>
             </div>
         </div>
-
-        <h2 class="main-tag"><a name="main-a"></a> Things i can do</h2>
-        <div class="can">
-            <img class="can-imag" src="./img/html.jpg" alt="">
-            <div class="can-text">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
-                <p>JQUERY</p>
-                <p>PHP</p>
-                <p>WordPress</p>
+        <div class="page2">
+            <h2 class="main-tag"><a name="main-a"></a> Things i can do</h2>
+            <div class="can">
+                <img class="can-imag" src="./img/html.jpg" alt="">
+                <div class="can-text">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                    <p>JQUERY</p>
+                    <p>PHP</p>
+                    <p>WordPress</p>
+                </div>
             </div>
         </div>
-
-        <h2 class="main-work"><a name="thework"></a> The Work</h2>
-        <div class="work">
-            <div class="work-text1">
-                <h3>Airbnb</h3>
-                <div class="textbox1">
-                    <img class="airbnb" src="./img/aribnb.png" alt="">
-                    <div class="contentbox1">
-                        <p>グループワークで制作したサイトです。</p>
-                        <p>宿泊サイトのからエリアごとのオススメを選び、</p>
-                        <p>選択すると紹介ページになっています。</p>
-                        <p>プラグインのfontbomも使いデザイン性や</p>
-                        <p>遊び心も取り入れたサイト。</p>
+        <div class="page3">
+            <h2 class="main-work"><a name="thework"></a> The Work</h2>
+            <div class="work">
+                <div class="work-text1">
+                    <h3>Airbnb</h3>
+                    <div class="textbox1">
+                        <img class="airbnb" src="./img/aribnb.png" alt="">
+                        <div class="contentbox1">
+                            <p>グループワークで制作したサイトです。</p>
+                            <p>宿泊サイトのからエリアごとのオススメを選び、</p>
+                            <p>選択すると紹介ページになっています。</p>
+                            <p>プラグインのfontbomも使いデザイン性や</p>
+                            <p>遊び心も取り入れたサイト。</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
+        </div>
+        <div class="page4" style="background-color: white;">
+            <h2 class="main-work"><a name="thework"></a> The Work</h2>
             <div class="work-text2">
-                <h3>WordBlog</h3>
+                <h3 class="wordtext">WordBlog</h3>
                 <div class="textbox2">
                     <div class="contentbox2">
                         <p>PHPを使い作成したWordPressです。</p>
@@ -83,10 +98,97 @@
                     <img class="wordblog" src="./img/wordblog.png" alt="">
                 </div>
             </div>
+        </div>
+        <div class="page5">
+            <div class="form">
+                <h2><a name="Comment"></a> Comment</h2>
+                <form id="form" class="topBefore">
+                    <input id="name" type="text" placeholder="NAME">
+                    <input id="email" type="text" placeholder="E-MAIL">
+                    <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                   <input id="submit" type="submit" value="GO!">
+            
+                </form>
+            </div>
+        </div>
+        <div class="page6">
+            <h1>Thank you</h1>
+            <img src="./img/bookimag.jpeg" class="page6-imag" alt="">
+        </div>
+        
+    </div><script type="text/javascript" src="./turnjs4/extras/jquery.min.1.7.js"></script>
+        <script type="text/javascript" src="./turnjs4/lib/turn.min.js"></script>
+        <script type="text/javascript">
+        $(function(){
+        $('#flipbook').turn({
+        // width:1100,
+        height:646,
+        autoCenter: true
+        });
+        });
+        </script>
+
+    <main>
+        <h2 class="content1"><a name="content"></a> Profile</h2>
+        <div class="content-box1">
+            <img class="main-imag1" src="./img/IMG_2411.png" alt="">
+            <div class="content-text1">
+                <h4>具志堅　雅子</h4>
+                <p>1997年、沖縄県北部の大宜味村で生まれました。</p>
+                <p>沖縄県立名護商工高等学校を卒業し、県内のホテルに就職。</p>
+                <p>ホテル退職後、携帯ショップ→歯科助手</p>
+                <p>その後パソコンに興味を持ち2020年にNexSeed沖縄に入学。</p>
+                <p>駆け出しエンジニアとしてこれから頑張っていきます。</p>
+                <p>コードも簡単なものなら作成可能です。</p>
+            </div>
+        </div>
+
+        <h2 class="main-tag1"><a name="main-a"></a> Things i can do</h2>
+        <div class="can1">
+            <img class="can-imag1" src="./img/html.jpg" alt="">
+            <div class="can-text1">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>JQUERY</p>
+                <p>PHP</p>
+                <p>WordPress</p>
+            </div>
+        </div>
+
+        <h2 class="main-work1"><a name="thework"></a> The Work</h2>
+        <div class="work1">
+            <div class="work-text-sp">
+                <h3>Airbnb</h3>
+                <div class="textbox-sp">
+                    <img class="airbnb2" src="./img/aribnb.png" alt="">
+                    <div class="contentbox-sp">
+                        <p>グループワークで制作したサイトです。</p>
+                        <p>宿泊サイトのからエリアごとのオススメを選び、</p>
+                        <p>選択すると紹介ページになっています。</p>
+                        <p>プラグインのfontbomも使いデザイン性や</p>
+                        <p>遊び心も取り入れたサイト。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-textsp">
+                <h3>WordBlog</h3>
+                <div class="textbox-sp">
+                    <img class="wordblog2" src="./img/wordblog.png" alt="">
+                    <div class="contentbox-sp">
+                        <p>PHPを使い作成したWordPressです。</p>
+                        <p>決められたデザインに沿って作成しています。</p>
+                        <p>レスポンシブデザインにもされており、PCや</p>
+                        <p>SPでもきれいにサイトが見れるようになって</p>
+                        <p>います。</p>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </main>
-    <div class="form">
+    <div class="form2">
         <h2><a name="Comment"></a> Comment</h2>
         <form id="form" class="topBefore">
             <input id="name" type="text" placeholder="NAME">
